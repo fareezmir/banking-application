@@ -22,6 +22,24 @@ The Bank Application is a JavaFX-based banking system simulation developed as pa
   - Make online purchases with account validation.
   - Dynamic account level management based on balance.
 
+### Customer Tiers
+
+The application supports three distinct customer tiers: Silver, Gold, and Platinum. Each tier comes with specific benefits and fees, which are dynamically managed based on the customer’s account balance:
+
+- **Silver Tier**: 
+  - **Balance**: Less than $10,000.
+  - **Fee**: $20 fee on online purchases.
+  
+- **Gold Tier**: 
+  - **Balance**: $10,000 to $19,999.
+  - **Fee**: $10 fee on online purchases.
+  
+- **Platinum Tier**: 
+  - **Balance**: $20,000 or more.
+  - **Fee**: No fees on online purchases.
+
+The system automatically adjusts the customer’s tier based on their balance, ensuring that customers receive the appropriate benefits as they manage their accounts.
+
 ![Customer Tiers](customer_tiers.gif)
 
 ## Project Structure
@@ -75,4 +93,3 @@ The application leverages the State Design Pattern to dynamically manage custome
 ---
 
 Thank you for checking out the Bank Application Project! Feel free to explore the code and suggest any improvements.
-
