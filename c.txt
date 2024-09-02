@@ -1,0 +1,5 @@
+customer
+c
+c
+100.0
+silver
