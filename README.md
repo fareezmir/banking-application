@@ -1,11 +1,10 @@
-# Bank Application
+# Bank Application Project
 
-**Name**: Fareez Mir  
-**Student ID**: 501159472  
+**Name**: Fareez Mir   
 
 ## Overview
 
-The Bank Application is a JavaFX-based banking system simulation. Developed as part of a university project, it allows users to log in as either a Manager or a Customer. Managers have the capability to manage customer accounts, while Customers can perform various banking operations such as viewing their balance, making deposits, withdrawing money, and purchasing items online. The application is designed with object-oriented principles and incorporates design patterns to ensure robust and maintainable code.
+The Bank Application is a JavaFX-based banking system simulation. Developed as part of a university project (COE 528), it allows users to log in as either a Manager or a Customer. Managers have the capability to manage customer accounts, while Customers can perform various banking operations such as viewing their balance, making deposits, withdrawing money, and purchasing items online. The application is designed with object-oriented principles and incorporates design patterns to ensure robust and maintainable code.
 
 ## Features
 
