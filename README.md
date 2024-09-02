@@ -4,7 +4,9 @@
 
 ## Overview
 
-The Bank Application is a JavaFX-based banking system simulation. Developed as part of a university project (COE 528), it allows users to log in as either a Manager or a Customer. Managers have the capability to manage customer accounts, while Customers can perform various banking operations such as viewing their balance, making deposits, withdrawing money, and purchasing items online. The application is designed with object-oriented principles and incorporates design patterns to ensure robust and maintainable code.
+The Bank Application is a JavaFX-based banking system simulation developed as part of a university project. The application allows users to log in as either a Manager or a Customer. Managers can manage customer accounts, while Customers can perform various banking operations such as viewing their balance, making deposits, withdrawing money, and purchasing items online. The application is designed with object-oriented principles and incorporates design patterns to ensure robust and maintainable code.
+
+![Overview of Bank Application](overview.gif)
 
 ## Features
 
@@ -20,6 +22,8 @@ The Bank Application is a JavaFX-based banking system simulation. Developed as p
   - Make online purchases with account validation.
   - Dynamic account level management based on balance.
 
+![Customer Tiers](customer_tiers.gif)
+
 ## Project Structure
 
 ### 1. Use Case Diagram
@@ -33,24 +37,23 @@ The use case diagram for the bank application showcases interactions between use
 - **Customer**: 
   - Can "Login" and "Logout".
   - Can "ViewBalance", "DepositMoney", "WithdrawMoney", and make "OnlinePurchase".
-
-Validation processes are included for depositing, withdrawing, and purchasing, ensuring that all operations are secure and correctly reflected in the customer’s data file.
+  - Each transaction is validated to ensure secure and accurate processing.
 
 ### 2. Class Diagram
 
-The class diagram outlines the structure and relationships between classes within the system, including:
+The class diagram outlines the structure and relationships between the classes within the system, highlighting the interaction between different components:
 
-- **Customer**: Handles customer data and operations.
+- **Customer**: Manages customer-related data and operations.
 - **CustomerState**: Interface representing different account levels (Silver, Gold, Platinum).
-- **ManagerScene**: Aggregates Manager-specific tasks.
-- **CustomerScene**: Manages customer operations and data.
-- **LoginMenu**: Entry point for user authentication.
-- **SceneHub**: Controls the transition between different scenes.
-- **ShoppingScene**: Manages the shopping experience for customers.
+- **ManagerScene**: Contains Manager-specific functionalities.
+- **CustomerScene**: Manages customer-related operations, including balance updates and transactions.
+- **LoginMenu**: Provides the initial interface for user authentication.
+- **SceneHub**: Acts as a controller for transitioning between different scenes in the application.
+- **ShoppingScene**: Manages the shopping operations for customers, including handling purchases and updating customer data.
 
 ### 3. State Design Pattern
 
-The application utilizes the State Design Pattern to manage customer account levels dynamically. The `CustomerState` interface and its implementations (`CustomerSilver`, `CustomerGold`, `CustomerPlatinum`) allow for seamless transitions between account levels based on the customer’s balance. This pattern ensures that the system is flexible and can handle changes in customer behavior at runtime.
+The application leverages the State Design Pattern to dynamically manage customer account levels. The `CustomerState` interface, along with its implementations (`CustomerSilver`, `CustomerGold`, `CustomerPlatinum`), enables smooth transitions between account levels based on the customer’s balance. This design pattern ensures flexibility and allows the system to adjust the customer’s benefits and fees according to their account status.
 
 ## How to Run
 
@@ -62,3 +65,14 @@ The application utilizes the State Design Pattern to manage customer account lev
 3. **Build and run the project**:
     - Ensure that JavaFX is correctly set up in your environment.
     - Run the `BankApplication` class to start the application.
+
+## Future Improvements
+
+- **Enhanced Security**: Implement multi-factor authentication for both Managers and Customers.
+- **Expanded Features**: Introduce new features such as loan management and interest calculation.
+- **Improved UI/UX**: Refine the user interface for a more intuitive and responsive experience.
+
+---
+
+Thank you for checking out the Bank Application Project! Feel free to explore the code and suggest any improvements.
+
