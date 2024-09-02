@@ -69,8 +69,8 @@ The application leverages the State Design Pattern to dynamically manage custome
 ## Future Improvements
 
 - **Enhanced Security**: Implement multi-factor authentication for both Managers and Customers.
-- **Expanded Features**: Introduce new features such as loan management and interest calculation.
-- **Improved UI/UX**: Refine the user interface for a more intuitive and responsive experience.
+- **Implement More Features**: Introduce new features such as interest calculation, and loans.
+- **Improved UI/UX**: Refine the user interface for a more intuitive and responsive experience by simplifying code.
 
 ---
 
