@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.banking'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // TODO: Add JavaFX dependencies or plugin if you plan to build/run via Gradle.
+    // Example for Windows (uncomment and adjust version):
+    // implementation "org.openjfx:javafx-base:21:win"
+    // implementation "org.openjfx:javafx-controls:21:win"
+    // implementation "org.openjfx:javafx-graphics:21:win"
+}
+
+application {
+    mainClass = 'com.banking.BankingApplication'
+}
+
+
