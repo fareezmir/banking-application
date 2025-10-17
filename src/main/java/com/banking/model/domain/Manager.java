@@ -3,11 +3,12 @@ package com.banking.model.domain;
 import java.io.File;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import com.banking.config.ApplicationConfig;
 
 public class Manager {
 
   public boolean removeCustomer(String username) {
-    File userFile = new File("data/userfile/" + username + ".txt");
+    File userFile = new File(ApplicationConfig.USER_DATA_DIR + "/" + username + ".txt");
     if (userFile.exists()) {
       return userFile.delete();
     }
@@ -15,9 +16,9 @@ public class Manager {
   }
 
   public boolean addCustomer(String username, String password) {
-    double initialBalance = 100;
-    String level = "silver";
-    File userFile = new File("data/userfile/" + username + ".txt");
+    double initialBalance = ApplicationConfig.DEFAULT_INITIAL_BALANCE;
+    String level = ApplicationConfig.DEFAULT_INITIAL_LEVEL;
+    File userFile = new File(ApplicationConfig.USER_DATA_DIR + "/" + username + ".txt");
     if (!userFile.exists()) {
       try (BufferedWriter writer = new BufferedWriter(new FileWriter(userFile))) {
         writer.write("customer\n");

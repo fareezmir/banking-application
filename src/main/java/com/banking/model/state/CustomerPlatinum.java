@@ -1,16 +1,17 @@
 package com.banking.model.state;
 
+import com.banking.config.ApplicationConfig;
 import com.banking.model.domain.Customer;
 
 public class CustomerPlatinum implements CustomerState {
   @Override
-  public double purchaseFee() { return 0.0; }
+  public double purchaseFee() { return ApplicationConfig.FEE_PLATINUM; }
 
   @Override
   public void updateLevel(Customer customer) {
-    if (customer.getBalance() < 10000) {
+    if (customer.getBalance() < ApplicationConfig.GOLD_MIN_BALANCE) {
       customer.setLevelState(new CustomerSilver());
-    } else if (customer.getBalance() < 20000) {
+    } else if (customer.getBalance() < ApplicationConfig.PLATINUM_MIN_BALANCE) {
       customer.setLevelState(new CustomerGold());
     }
   }

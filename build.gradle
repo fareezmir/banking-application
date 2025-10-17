@@ -17,15 +17,15 @@ repositories {
 }
 
 dependencies {
-    // TODO: Add JavaFX dependencies or plugin if you plan to build/run via Gradle.
-    // Example for Windows (uncomment and adjust version):
-    // implementation "org.openjfx:javafx-base:21:win"
-    // implementation "org.openjfx:javafx-controls:21:win"
-    // implementation "org.openjfx:javafx-graphics:21:win"
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
 }
 
 application {
     mainClass = 'com.banking.BankingApplication'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 
