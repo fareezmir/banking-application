@@ -77,7 +77,7 @@ The application leverages the State Design Pattern to dynamically manage custome
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/bank-application.git
+    git clone https://github.com/yourusername/banking-application.git
     ```
 2. **Open the project in your favorite Java IDE (e.g., IntelliJ IDEA, Eclipse)**.
 3. **Build and run the project**:
@@ -87,7 +87,6 @@ The application leverages the State Design Pattern to dynamically manage custome
 ## Future Improvements
 
 - **Enhanced Security**: Implement multi-factor authentication for both Managers and Customers.
-- **Implement More Features**: Introduce new features such as interest calculation, and loans.
 - **Improved UI/UX**: Refine the user interface for a more intuitive and responsive experience by simplifying code.
 
 ---
