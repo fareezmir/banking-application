@@ -40,7 +40,7 @@ The application supports three distinct customer tiers: Silver, Gold, and Platin
 
 The system automatically adjusts the customer’s tier based on their balance, ensuring that customers receive the appropriate benefits as they manage their accounts.
 
-![Customer Tiers](customer_tiers.gif)
+![Customer Tiers](src/main/resources/assets/images/customer_tiers.gif)
 
 ## Project Structure
 
