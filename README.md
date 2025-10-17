@@ -6,7 +6,7 @@
 
 The Bank Application is a JavaFX-based banking system simulation developed as part of a university project. The application allows users to log in as either a Manager or a Customer. Managers can manage customer accounts, while Customers can perform various banking operations such as viewing their balance, making deposits, withdrawing money, and purchasing items online. The application is designed with object-oriented principles and incorporates design patterns to ensure robust and maintainable code.
 
-![Overview of Bank Application](overview.gif)
+![Overview of Bank Application](src/main/resources/assets/images/overview.gif)
 
 ## Features
 
